@@ -1,18 +1,37 @@
+import { useAuthStore } from "@/stores/useAuthStore"
+import { LoginForm } from "@/components/auth/LoginForm"
 import { Button } from "@workspace/ui/components/button"
 
 export function App() {
+  const { user, isLoading, logout } = useAuthStore()
+
+  // Enquanto o Firebase verifica se há sessão ativa, mostra loading
+  if (isLoading) {
+    return (
+      <div className="flex min-h-svh items-center justify-center">
+        <p className="text-muted-foreground text-sm">Carregando...</p>
+      </div>
+    )
+  }
+
+  // Sem usuário logado → mostra tela de login
+  if (!user) {
+    return <LoginForm />
+  }
+
+  // Usuário logado → mostra o conteúdo do app (placeholder por enquanto)
   return (
-    <div className="flex min-h-svh p-6">
-      <div className="flex max-w-md min-w-0 flex-col gap-4 text-sm leading-loose">
+    <div className="flex min-h-svh flex-col p-6">
+      <div className="flex items-center justify-between">
         <div>
-          <h1 className="font-medium">Project ready!</h1>
-          <p>You may now add components and start building.</p>
-          <p>We&apos;ve already added the button component for you.</p>
-          <Button className="mt-2">Button</Button>
+          <h1 className="font-medium">Wizped</h1>
+          <p className="text-muted-foreground text-sm">
+            Bem-vindo, {user.displayName || user.email}
+          </p>
         </div>
-        <div className="text-muted-foreground font-mono text-xs">
-          (Press <kbd>d</kbd> to toggle dark mode)
-        </div>
+        <Button variant="outline" size="sm" onClick={logout}>
+          Sair
+        </Button>
       </div>
     </div>
   )
