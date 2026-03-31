@@ -1,11 +1,17 @@
+// apps/web/src/App.tsx
+import { BrowserRouter, Routes, Route } from "react-router-dom"
 import { useAuthStore } from "@/stores/useAuthStore"
 import { LoginForm } from "@/components/auth/LoginForm"
-import { Button } from "@workspace/ui/components/button"
+import { AppLayout } from "@/components/layout/AppLayout"
+import { DashboardPage } from "@/pages/DashboardPage"
+import { StudentsPage } from "@/pages/StudentsPage"
+import { MaterialsPage } from "@/pages/MaterialsPage"
+import { SettingsPage } from "@/pages/SettingsPage"
 
 export function App() {
-  const { user, isLoading, logout } = useAuthStore()
+  const { user, isLoading } = useAuthStore()
 
-  // Enquanto o Firebase verifica se há sessão ativa, mostra loading
+  // Enquanto o Firebase verifica sessão, mostra loading
   if (isLoading) {
     return (
       <div className="flex min-h-svh items-center justify-center">
@@ -14,25 +20,24 @@ export function App() {
     )
   }
 
-  // Sem usuário logado → mostra tela de login
+  // Sem usuário → login (fora do Router, porque login não precisa de sidebar)
   if (!user) {
     return <LoginForm />
   }
 
-  // Usuário logado → mostra o conteúdo do app (placeholder por enquanto)
+  // Usuário logado → CRM com sidebar e rotas
   return (
-    <div className="flex min-h-svh flex-col p-6">
-      <div className="flex items-center justify-between">
-        <div>
-          <h1 className="font-medium">Wizped</h1>
-          <p className="text-muted-foreground text-sm">
-            Bem-vindo, {user.displayName || user.email}
-          </p>
-        </div>
-        <Button variant="outline" size="sm" onClick={logout}>
-          Sair
-        </Button>
-      </div>
-    </div>
+    <BrowserRouter>
+      <Routes>
+        {/* O AppLayout é a "casca": sidebar + header + <Outlet />.
+            As rotas filhas renderizam dentro do <Outlet />. */}
+        <Route element={<AppLayout />}>
+          <Route index element={<DashboardPage />} />
+          <Route path="alunos" element={<StudentsPage />} />
+          <Route path="materiais" element={<MaterialsPage />} />
+          <Route path="configuracoes" element={<SettingsPage />} />
+        </Route>
+      </Routes>
+    </BrowserRouter>
   )
 }
