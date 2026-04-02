@@ -6,6 +6,7 @@ import {
     StudentIcon,
     BookOpen01Icon,
     Settings01Icon,
+    ContactIcon,
 } from "@hugeicons/core-free-icons"
 import {
     Sidebar,
@@ -29,6 +30,7 @@ const mainNavItems = [
     { title: "Dashboard", path: "/", icon: DashboardSquare01Icon },
     { title: "Alunos", path: "/alunos", icon: StudentIcon },
     { title: "Materiais", path: "/materiais", icon: BookOpen01Icon },
+    { title: "Contatos", path: "/contatos", icon: ContactIcon }
 ]
 
 const secondaryNavItems = [

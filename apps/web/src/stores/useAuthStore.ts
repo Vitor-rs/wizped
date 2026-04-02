@@ -1,16 +1,18 @@
+// apps/web/src/stores/useAuthStore.ts — VERSÃO ATUALIZADA
 import { create } from "zustand"
 import {
   signInWithEmailAndPassword,
   signInWithPopup,
   signOut,
   onAuthStateChanged,
+  GoogleAuthProvider,
   type User,
 } from "firebase/auth"
 import { auth, googleProvider } from "@/lib/firebase"
 
-// Tipagem do estado e das ações do store
 type AuthState = {
   user: User | null
+  accessToken: string | null // NOVO — token para as Google APIs
   isLoading: boolean
   error: string | null
 }
@@ -20,11 +22,12 @@ type AuthActions = {
   loginWithGoogle: () => Promise<void>
   logout: () => Promise<void>
   clearError: () => void
+  refreshGoogleToken: () => Promise<string | null> // NOVO — re-auth silenciosa
 }
 
 export const useAuthStore = create<AuthState & AuthActions>((set) => ({
-  // Estado inicial: carregando até o Firebase confirmar se há sessão ativa
   user: null,
+  accessToken: null,
   isLoading: true,
   error: null,
 
@@ -32,7 +35,8 @@ export const useAuthStore = create<AuthState & AuthActions>((set) => ({
     set({ isLoading: true, error: null })
     try {
       await signInWithEmailAndPassword(auth, email, password)
-      // Não precisa fazer set({ user }) aqui — o onAuthStateChanged cuida disso
+      // Login por email NÃO produz access token do Google — só Firebase Auth
+      // As páginas de APIs do Google só funcionam com login Google
     } catch (err) {
       const message = err instanceof Error ? err.message : "Erro ao fazer login"
       set({ error: message, isLoading: false })
@@ -42,7 +46,11 @@ export const useAuthStore = create<AuthState & AuthActions>((set) => ({
   loginWithGoogle: async () => {
     set({ isLoading: true, error: null })
     try {
-      await signInWithPopup(auth, googleProvider)
+      const result = await signInWithPopup(auth, googleProvider)
+      // Extrair o access token do Google OAuth
+      const credential = GoogleAuthProvider.credentialFromResult(result)
+      const accessToken = credential?.accessToken ?? null
+      set({ accessToken })
     } catch (err) {
       const message =
         err instanceof Error ? err.message : "Erro ao fazer login com Google"
@@ -53,6 +61,7 @@ export const useAuthStore = create<AuthState & AuthActions>((set) => ({
   logout: async () => {
     try {
       await signOut(auth)
+      set({ accessToken: null })
     } catch (err) {
       const message = err instanceof Error ? err.message : "Erro ao sair"
       set({ error: message })
@@ -60,11 +69,24 @@ export const useAuthStore = create<AuthState & AuthActions>((set) => ({
   },
 
   clearError: () => set({ error: null }),
+
+  // Quando o access token expirar (401), chama isso para re-autenticar
+  // O popup geralmente resolve instantaneamente se o usuário já está logado no Google
+  refreshGoogleToken: async () => {
+    try {
+      const result = await signInWithPopup(auth, googleProvider)
+      const credential = GoogleAuthProvider.credentialFromResult(result)
+      const newToken = credential?.accessToken ?? null
+      set({ accessToken: newToken })
+      return newToken
+    } catch {
+      set({ error: "Não foi possível renovar o token do Google" })
+      return null
+    }
+  },
 }))
 
-// Listener global — roda uma vez quando o módulo é importado.
-// Funciona como um "vigia" que fica na portaria: toda vez que alguém
-// entra ou sai (login/logout), ele atualiza o estado do Zustand.
+// Listener global — continua funcionando igual
 onAuthStateChanged(auth, (user) => {
   useAuthStore.setState({ user, isLoading: false })
 })
