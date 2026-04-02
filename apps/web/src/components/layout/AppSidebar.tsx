@@ -8,6 +8,7 @@ import {
     Settings01Icon,
     ContactIcon,
     Calendar01Icon,
+    Folder01Icon
 } from "@hugeicons/core-free-icons"
 import {
     Sidebar,
@@ -32,7 +33,8 @@ const mainNavItems = [
     { title: "Alunos", path: "/alunos", icon: StudentIcon },
     { title: "Materiais", path: "/materiais", icon: BookOpen01Icon },
     { title: "Contatos", path: "/contatos", icon: ContactIcon },
-    { title: "Agenda", path: "/agenda", icon: Calendar01Icon }
+    { title: "Agenda", path: "/agenda", icon: Calendar01Icon },
+    { title: "Drive", path: "/drive", icon: Folder01Icon }
 ]
 
 const secondaryNavItems = [

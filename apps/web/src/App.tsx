@@ -9,6 +9,7 @@ import { MaterialsPage } from "@/pages/MaterialsPage"
 import { ContactsPage } from "@/pages/ContactsPage"
 import { SettingsPage } from "@/pages/SettingsPage"
 import { CalendarPage } from "@/pages/CalendarPage"
+import { DrivePage } from "@/pages/DrivePage"
 
 export function App() {
   const { user, isLoading } = useAuthStore()
@@ -34,6 +35,7 @@ export function App() {
           <Route path="materiais" element={<MaterialsPage />} />
           <Route path="contatos" element={<ContactsPage />} />
           <Route path="agenda" element={<CalendarPage />} />
+          <Route path="drive" element={<DrivePage />} />
           <Route path="configuracoes" element={<SettingsPage />} />
         </Route>
       </Routes>
