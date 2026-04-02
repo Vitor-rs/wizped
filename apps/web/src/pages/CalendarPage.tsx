@@ -11,7 +11,7 @@ type GCalEntry = Record<string, any>
 /* eslint-enable @typescript-eslint/no-explicit-any */
 
 export function CalendarPage() {
-    const { accessToken, user } = useAuthStore()
+    const { accessToken } = useAuthStore()
     const [events, setEvents] = useState<GCalEvent[]>([])
     const [calendars, setCalendars] = useState<GCalEntry[]>([])
     const [loading, setLoading] = useState(false)
@@ -324,16 +324,21 @@ export function CalendarPage() {
                 </div>
             )}
 
-            {/* ===== EMBED ===== */}
+            {/* ===== ABRIR NO GOOGLE ===== */}
             {view === "embed" && (
-                <Card className="overflow-hidden p-0">
-                    <iframe
-                        src={`https://calendar.google.com/calendar/embed?src=${encodeURIComponent(user?.email ?? "primary")}&ctz=America/Campo_Grande&mode=WEEK&showTitle=0&showNav=1&showDate=1&showPrint=0&showCalendars=0`}
-                        className="h-[600px] w-full border-0"
-                        title="Google Calendar"
-                    />
+                <Card className="flex flex-col items-center justify-center gap-4 p-12">
+                    <p className="text-muted-foreground text-center text-sm">
+                        Calendários privados não podem ser embarcados por restrição do
+                        Google. Use o botão abaixo para abrir direto no Google Calendar.
+                    </p>
+                    <Button
+                        onClick={() => window.open("https://calendar.google.com", "_blank")}
+                    >
+                        Abrir Google Calendar
+                    </Button>
                 </Card>
             )}
+
         </div>
     )
 }
