@@ -2,11 +2,11 @@
   "meta": {
     "rootDir": "C:/Users/Vitor/Documents/Wizped/wizped",
     "rootLabel": "wizped",
-    "generatedAt": "2026-04-02T22:31:37.562Z",
+    "generatedAt": "2026-04-03T03:06:00.149Z",
     "totalFiles": 60,
     "totalDirs": 20,
     "totalEdges": 2,
-    "scanDurationMs": 14
+    "scanDurationMs": 344
   },
   "nodes": [
     {
