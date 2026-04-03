@@ -1,0 +1,705 @@
+{
+  "meta": {
+    "rootDir": "C:/Users/Vitor/Documents/Wizped/wizped",
+    "rootLabel": "wizped",
+    "generatedAt": "2026-04-02T22:31:37.562Z",
+    "totalFiles": 60,
+    "totalDirs": 20,
+    "totalEdges": 2,
+    "scanDurationMs": 14
+  },
+  "nodes": [
+    {
+      "id": "apps",
+      "type": "directory",
+      "parent": null,
+      "label": "apps",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps"
+    },
+    {
+      "id": "apps/web",
+      "type": "directory",
+      "parent": "apps",
+      "label": "web",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web"
+    },
+    {
+      "id": "apps/web/src",
+      "type": "directory",
+      "parent": "apps/web",
+      "label": "src",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src"
+    },
+    {
+      "id": "apps/web/src/components",
+      "type": "directory",
+      "parent": "apps/web/src",
+      "label": "components",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\components"
+    },
+    {
+      "id": "apps/web/src/components/auth",
+      "type": "directory",
+      "parent": "apps/web/src/components",
+      "label": "auth",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\components\\auth"
+    },
+    {
+      "id": "apps/web/src/components/layout",
+      "type": "directory",
+      "parent": "apps/web/src/components",
+      "label": "layout",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\components\\layout"
+    },
+    {
+      "id": "apps/web/src/hooks",
+      "type": "directory",
+      "parent": "apps/web/src",
+      "label": "hooks",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\hooks"
+    },
+    {
+      "id": "apps/web/src/lib",
+      "type": "directory",
+      "parent": "apps/web/src",
+      "label": "lib",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\lib"
+    },
+    {
+      "id": "apps/web/src/pages",
+      "type": "directory",
+      "parent": "apps/web/src",
+      "label": "pages",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\pages"
+    },
+    {
+      "id": "apps/web/src/services",
+      "type": "directory",
+      "parent": "apps/web/src",
+      "label": "services",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\services"
+    },
+    {
+      "id": "apps/web/src/stores",
+      "type": "directory",
+      "parent": "apps/web/src",
+      "label": "stores",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\stores"
+    },
+    {
+      "id": "packages",
+      "type": "directory",
+      "parent": null,
+      "label": "packages",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages"
+    },
+    {
+      "id": "packages/ui",
+      "type": "directory",
+      "parent": "packages",
+      "label": "ui",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui"
+    },
+    {
+      "id": "packages/ui/src",
+      "type": "directory",
+      "parent": "packages/ui",
+      "label": "src",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src"
+    },
+    {
+      "id": "packages/ui/src/components",
+      "type": "directory",
+      "parent": "packages/ui/src",
+      "label": "components",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components"
+    },
+    {
+      "id": "packages/ui/src/hooks",
+      "type": "directory",
+      "parent": "packages/ui/src",
+      "label": "hooks",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\hooks"
+    },
+    {
+      "id": "packages/ui/src/lib",
+      "type": "directory",
+      "parent": "packages/ui/src",
+      "label": "lib",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\lib"
+    },
+    {
+      "id": "packages/ui/src/styles",
+      "type": "directory",
+      "parent": "packages/ui/src",
+      "label": "styles",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\styles"
+    },
+    {
+      "id": "resource_docs",
+      "type": "directory",
+      "parent": null,
+      "label": "resource_docs",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\resource_docs"
+    },
+    {
+      "id": "scripts",
+      "type": "directory",
+      "parent": null,
+      "label": "scripts",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\scripts"
+    },
+    {
+      "id": ".firebaserc",
+      "type": "file",
+      "parent": null,
+      "label": ".firebaserc",
+      "ext": "",
+      "size": 82,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\.firebaserc"
+    },
+    {
+      "id": ".gitignore",
+      "type": "file",
+      "parent": null,
+      "label": ".gitignore",
+      "ext": "",
+      "size": 291,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\.gitignore"
+    },
+    {
+      "id": ".npmrc",
+      "type": "file",
+      "parent": null,
+      "label": ".npmrc",
+      "ext": "",
+      "size": 0,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\.npmrc"
+    },
+    {
+      "id": ".prettierignore",
+      "type": "file",
+      "parent": null,
+      "label": ".prettierignore",
+      "ext": "",
+      "size": 70,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\.prettierignore"
+    },
+    {
+      "id": ".prettierrc",
+      "type": "file",
+      "parent": null,
+      "label": ".prettierrc",
+      "ext": "",
+      "size": 285,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\.prettierrc"
+    },
+    {
+      "id": "README.md",
+      "type": "file",
+      "parent": null,
+      "label": "README.md",
+      "ext": ".md",
+      "size": 515,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\README.md"
+    },
+    {
+      "id": "apps/web/.env.local",
+      "type": "file",
+      "parent": "apps/web",
+      "label": ".env.local",
+      "ext": ".local",
+      "size": 409,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\.env.local"
+    },
+    {
+      "id": "apps/web/components.json",
+      "type": "file",
+      "parent": "apps/web",
+      "label": "components.json",
+      "ext": ".json",
+      "size": 529,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\components.json"
+    },
+    {
+      "id": "apps/web/eslint.config.js",
+      "type": "file",
+      "parent": "apps/web",
+      "label": "eslint.config.js",
+      "ext": ".js",
+      "size": 824,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\eslint.config.js"
+    },
+    {
+      "id": "apps/web/index.html",
+      "type": "file",
+      "parent": "apps/web",
+      "label": "index.html",
+      "ext": ".html",
+      "size": 368,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\index.html"
+    },
+    {
+      "id": "apps/web/package.json",
+      "type": "file",
+      "parent": "apps/web",
+      "label": "package.json",
+      "ext": ".json",
+      "size": 1256,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\package.json"
+    },
+    {
+      "id": "apps/web/src/App.tsx",
+      "type": "file",
+      "parent": "apps/web/src",
+      "label": "App.tsx",
+      "ext": ".tsx",
+      "size": 1544,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\App.tsx"
+    },
+    {
+      "id": "apps/web/src/components/.gitkeep",
+      "type": "file",
+      "parent": "apps/web/src/components",
+      "label": ".gitkeep",
+      "ext": "",
+      "size": 0,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\components\\.gitkeep"
+    },
+    {
+      "id": "apps/web/src/components/auth/LoginForm.tsx",
+      "type": "file",
+      "parent": "apps/web/src/components/auth",
+      "label": "LoginForm.tsx",
+      "ext": ".tsx",
+      "size": 2946,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\components\\auth\\LoginForm.tsx"
+    },
+    {
+      "id": "apps/web/src/components/layout/AppLayout.tsx",
+      "type": "file",
+      "parent": "apps/web/src/components/layout",
+      "label": "AppLayout.tsx",
+      "ext": ".tsx",
+      "size": 1062,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\components\\layout\\AppLayout.tsx"
+    },
+    {
+      "id": "apps/web/src/components/layout/AppSidebar.tsx",
+      "type": "file",
+      "parent": "apps/web/src/components/layout",
+      "label": "AppSidebar.tsx",
+      "ext": ".tsx",
+      "size": 5727,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\components\\layout\\AppSidebar.tsx"
+    },
+    {
+      "id": "apps/web/src/components/theme-provider.tsx",
+      "type": "file",
+      "parent": "apps/web/src/components",
+      "label": "theme-provider.tsx",
+      "ext": ".tsx",
+      "size": 5286,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\components\\theme-provider.tsx"
+    },
+    {
+      "id": "apps/web/src/hooks/use-mobile.ts",
+      "type": "file",
+      "parent": "apps/web/src/hooks",
+      "label": "use-mobile.ts",
+      "ext": ".ts",
+      "size": 565,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\hooks\\use-mobile.ts"
+    },
+    {
+      "id": "apps/web/src/lib/firebase.ts",
+      "type": "file",
+      "parent": "apps/web/src/lib",
+      "label": "firebase.ts",
+      "ext": ".ts",
+      "size": 1077,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\lib\\firebase.ts"
+    },
+    {
+      "id": "apps/web/src/main.tsx",
+      "type": "file",
+      "parent": "apps/web/src",
+      "label": "main.tsx",
+      "ext": ".tsx",
+      "size": 488,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\main.tsx"
+    },
+    {
+      "id": "apps/web/src/pages/CalendarPage.tsx",
+      "type": "file",
+      "parent": "apps/web/src/pages",
+      "label": "CalendarPage.tsx",
+      "ext": ".tsx",
+      "size": 32004,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\pages\\CalendarPage.tsx"
+    },
+    {
+      "id": "apps/web/src/pages/ContactsPage.tsx",
+      "type": "file",
+      "parent": "apps/web/src/pages",
+      "label": "ContactsPage.tsx",
+      "ext": ".tsx",
+      "size": 7222,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\pages\\ContactsPage.tsx"
+    },
+    {
+      "id": "apps/web/src/pages/DashboardPage.tsx",
+      "type": "file",
+      "parent": "apps/web/src/pages",
+      "label": "DashboardPage.tsx",
+      "ext": ".tsx",
+      "size": 359,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\pages\\DashboardPage.tsx"
+    },
+    {
+      "id": "apps/web/src/pages/DrivePage.tsx",
+      "type": "file",
+      "parent": "apps/web/src/pages",
+      "label": "DrivePage.tsx",
+      "ext": ".tsx",
+      "size": 19381,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\pages\\DrivePage.tsx"
+    },
+    {
+      "id": "apps/web/src/pages/MaterialsPage.tsx",
+      "type": "file",
+      "parent": "apps/web/src/pages",
+      "label": "MaterialsPage.tsx",
+      "ext": ".tsx",
+      "size": 363,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\pages\\MaterialsPage.tsx"
+    },
+    {
+      "id": "apps/web/src/pages/SettingsPage.tsx",
+      "type": "file",
+      "parent": "apps/web/src/pages",
+      "label": "SettingsPage.tsx",
+      "ext": ".tsx",
+      "size": 360,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\pages\\SettingsPage.tsx"
+    },
+    {
+      "id": "apps/web/src/pages/StudentsPage.tsx",
+      "type": "file",
+      "parent": "apps/web/src/pages",
+      "label": "StudentsPage.tsx",
+      "ext": ".tsx",
+      "size": 331,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\pages\\StudentsPage.tsx"
+    },
+    {
+      "id": "apps/web/src/services/googleApi.ts",
+      "type": "file",
+      "parent": "apps/web/src/services",
+      "label": "googleApi.ts",
+      "ext": ".ts",
+      "size": 7785,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\services\\googleApi.ts"
+    },
+    {
+      "id": "apps/web/src/stores/useAuthStore.ts",
+      "type": "file",
+      "parent": "apps/web/src/stores",
+      "label": "useAuthStore.ts",
+      "ext": ".ts",
+      "size": 2956,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\stores\\useAuthStore.ts"
+    },
+    {
+      "id": "apps/web/tsconfig.app.json",
+      "type": "file",
+      "parent": "apps/web",
+      "label": "tsconfig.app.json",
+      "ext": ".json",
+      "size": 917,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\tsconfig.app.json"
+    },
+    {
+      "id": "apps/web/tsconfig.json",
+      "type": "file",
+      "parent": "apps/web",
+      "label": "tsconfig.json",
+      "ext": ".json",
+      "size": 281,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\tsconfig.json"
+    },
+    {
+      "id": "apps/web/tsconfig.node.json",
+      "type": "file",
+      "parent": "apps/web",
+      "label": "tsconfig.node.json",
+      "ext": ".json",
+      "size": 711,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\tsconfig.node.json"
+    },
+    {
+      "id": "apps/web/vite.config.ts",
+      "type": "file",
+      "parent": "apps/web",
+      "label": "vite.config.ts",
+      "ext": ".ts",
+      "size": 341,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\vite.config.ts"
+    },
+    {
+      "id": "package.json",
+      "type": "file",
+      "parent": null,
+      "label": "package.json",
+      "ext": ".json",
+      "size": 503,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\package.json"
+    },
+    {
+      "id": "packages/ui/components.json",
+      "type": "file",
+      "parent": "packages/ui",
+      "label": "components.json",
+      "ext": ".json",
+      "size": 547,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\components.json"
+    },
+    {
+      "id": "packages/ui/eslint.config.js",
+      "type": "file",
+      "parent": "packages/ui",
+      "label": "eslint.config.js",
+      "ext": ".js",
+      "size": 639,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\eslint.config.js"
+    },
+    {
+      "id": "packages/ui/package.json",
+      "type": "file",
+      "parent": "packages/ui",
+      "label": "package.json",
+      "ext": ".json",
+      "size": 1299,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\package.json"
+    },
+    {
+      "id": "packages/ui/src/components/.gitkeep",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": ".gitkeep",
+      "ext": "",
+      "size": 0,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\.gitkeep"
+    },
+    {
+      "id": "packages/ui/src/components/button.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "button.tsx",
+      "ext": ".tsx",
+      "size": 3233,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\button.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/card.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "card.tsx",
+      "ext": ".tsx",
+      "size": 2556,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\card.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/dialog.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "dialog.tsx",
+      "ext": ".tsx",
+      "size": 4282,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\dialog.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/input.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "input.tsx",
+      "ext": ".tsx",
+      "size": 944,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\input.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/separator.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "separator.tsx",
+      "ext": ".tsx",
+      "size": 656,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\separator.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/sheet.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "sheet.tsx",
+      "ext": ".tsx",
+      "size": 4685,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\sheet.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/sidebar.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "sidebar.tsx",
+      "ext": ".tsx",
+      "size": 21544,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\sidebar.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/skeleton.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "skeleton.tsx",
+      "ext": ".tsx",
+      "size": 287,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\skeleton.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/table.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "table.tsx",
+      "ext": ".tsx",
+      "size": 2370,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\table.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/tooltip.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "tooltip.tsx",
+      "ext": ".tsx",
+      "size": 2109,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\tooltip.tsx"
+    },
+    {
+      "id": "packages/ui/src/hooks/.gitkeep",
+      "type": "file",
+      "parent": "packages/ui/src/hooks",
+      "label": ".gitkeep",
+      "ext": "",
+      "size": 0,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\hooks\\.gitkeep"
+    },
+    {
+      "id": "packages/ui/src/lib/.gitkeep",
+      "type": "file",
+      "parent": "packages/ui/src/lib",
+      "label": ".gitkeep",
+      "ext": "",
+      "size": 0,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\lib\\.gitkeep"
+    },
+    {
+      "id": "packages/ui/src/lib/utils.ts",
+      "type": "file",
+      "parent": "packages/ui/src/lib",
+      "label": "utils.ts",
+      "ext": ".ts",
+      "size": 166,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\lib\\utils.ts"
+    },
+    {
+      "id": "packages/ui/src/styles/globals.css",
+      "type": "file",
+      "parent": "packages/ui/src/styles",
+      "label": "globals.css",
+      "ext": ".css",
+      "size": 4712,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\styles\\globals.css"
+    },
+    {
+      "id": "packages/ui/tsconfig.json",
+      "type": "file",
+      "parent": "packages/ui",
+      "label": "tsconfig.json",
+      "ext": ".json",
+      "size": 405,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\tsconfig.json"
+    },
+    {
+      "id": "packages/ui/tsconfig.lint.json",
+      "type": "file",
+      "parent": "packages/ui",
+      "label": "tsconfig.lint.json",
+      "ext": ".json",
+      "size": 335,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\tsconfig.lint.json"
+    },
+    {
+      "id": "resource_docs/dicas_gemini_firebase.md",
+      "type": "file",
+      "parent": "resource_docs",
+      "label": "dicas_gemini_firebase.md",
+      "ext": ".md",
+      "size": 699816,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\resource_docs\\dicas_gemini_firebase.md"
+    },
+    {
+      "id": "resource_docs/estrutura_materiais_wizard.md",
+      "type": "file",
+      "parent": "resource_docs",
+      "label": "estrutura_materiais_wizard.md",
+      "ext": ".md",
+      "size": 25527,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\resource_docs\\estrutura_materiais_wizard.md"
+    },
+    {
+      "id": "resource_docs/relato_estrutura_livros.md",
+      "type": "file",
+      "parent": "resource_docs",
+      "label": "relato_estrutura_livros.md",
+      "ext": ".md",
+      "size": 25282,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\resource_docs\\relato_estrutura_livros.md"
+    },
+    {
+      "id": "scripts/project-graph.ts",
+      "type": "file",
+      "parent": "scripts",
+      "label": "project-graph.ts",
+      "ext": ".ts",
+      "size": 51838,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\scripts\\project-graph.ts"
+    },
+    {
+      "id": "tsconfig.json",
+      "type": "file",
+      "parent": null,
+      "label": "tsconfig.json",
+      "ext": ".json",
+      "size": 168,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\tsconfig.json"
+    },
+    {
+      "id": "turbo.json",
+      "type": "file",
+      "parent": null,
+      "label": "turbo.json",
+      "ext": ".json",
+      "size": 466,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\turbo.json"
+    }
+  ],
+  "edges": [
+    {
+      "source": "apps/web/src/components/layout/AppLayout.tsx",
+      "target": "apps/web/src/components/layout/AppSidebar.tsx",
+      "type": "import"
+    },
+    {
+      "source": "apps/web/src/main.tsx",
+      "target": "apps/web/src/App.tsx",
+      "type": "import"
+    }
+  ]
+}
