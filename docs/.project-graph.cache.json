@@ -1,0 +1,579 @@
+{
+  "version": 1,
+  "rootDir": "C:/Users/Vitor/Documents/Wizped/wizped",
+  "entries": {
+    ".firebaserc": {
+      "mtimeMs": 1775150983759.2104,
+      "size": 82,
+      "imports": [],
+      "resolved": []
+    },
+    ".gitignore": {
+      "mtimeMs": 1774939477376.918,
+      "size": 291,
+      "imports": [],
+      "resolved": []
+    },
+    ".npmrc": {
+      "mtimeMs": 1774939477376.918,
+      "size": 0,
+      "imports": [],
+      "resolved": []
+    },
+    ".prettierignore": {
+      "mtimeMs": 1774939477377.8867,
+      "size": 70,
+      "imports": [],
+      "resolved": []
+    },
+    ".prettierrc": {
+      "mtimeMs": 1774939477377.8867,
+      "size": 285,
+      "imports": [],
+      "resolved": []
+    },
+    "README.md": {
+      "mtimeMs": 1774939477378.933,
+      "size": 515,
+      "imports": [],
+      "resolved": []
+    },
+    "apps/web/.env.local": {
+      "mtimeMs": 1775183869620.0896,
+      "size": 409,
+      "imports": [],
+      "resolved": []
+    },
+    "apps/web/components.json": {
+      "mtimeMs": 1774939540715.9463,
+      "size": 529,
+      "imports": [],
+      "resolved": []
+    },
+    "apps/web/eslint.config.js": {
+      "mtimeMs": 1774941986410.8206,
+      "size": 824,
+      "imports": [
+        "@eslint/js",
+        "globals",
+        "eslint-plugin-react-hooks",
+        "eslint-plugin-react-refresh",
+        "typescript-eslint",
+        "eslint/config"
+      ],
+      "resolved": []
+    },
+    "apps/web/index.html": {
+      "mtimeMs": 1774941401425.3242,
+      "size": 368,
+      "imports": [],
+      "resolved": []
+    },
+    "apps/web/package.json": {
+      "mtimeMs": 1775263522047.864,
+      "size": 1350,
+      "imports": [],
+      "resolved": []
+    },
+    "apps/web/src/App.tsx": {
+      "mtimeMs": 1775265033177.9053,
+      "size": 1545,
+      "imports": [
+        "react-router-dom",
+        "@/stores/useAuthStore",
+        "@/components/auth/LoginForm",
+        "@/components/layout/AppLayout",
+        "@/pages/DashboardPage",
+        "@/pages/StudentsPage",
+        "@/pages/MaterialsPage",
+        "@/pages/ContactsPage",
+        "@/pages/SettingsPage",
+        "@/pages/CalendarPage",
+        "@/pages/DrivePage"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/components/.gitkeep": {
+      "mtimeMs": 1774939477382.0266,
+      "size": 0,
+      "imports": [],
+      "resolved": []
+    },
+    "apps/web/src/components/auth/LoginForm.tsx": {
+      "mtimeMs": 1774943129111.652,
+      "size": 2946,
+      "imports": [
+        "react",
+        "@workspace/ui/components/button",
+        "@workspace/ui/components/card",
+        "@workspace/ui/components/input",
+        "@/stores/useAuthStore"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/components/data-table/DataTable.tsx": {
+      "mtimeMs": 1775264742408.6504,
+      "size": 5637,
+      "imports": [
+        "@tanstack/react-table",
+        "react",
+        "@workspace/ui/components/table",
+        "@workspace/ui/components/input"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/components/data-table/pessoa-columns.tsx": {
+      "mtimeMs": 1775264335162.8918,
+      "size": 3673,
+      "imports": [
+        "@tanstack/react-table",
+        "@/schemas/pessoas",
+        "@workspace/ui/components/button",
+        "@hugeicons/react",
+        "@hugeicons/core-free-icons"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/components/layout/AppLayout.tsx": {
+      "mtimeMs": 1774944448176.215,
+      "size": 1062,
+      "imports": [
+        "react-router-dom",
+        "@workspace/ui/components/sidebar",
+        "@workspace/ui/components/separator",
+        "./AppSidebar"
+      ],
+      "resolved": [
+        "apps/web/src/components/layout/AppSidebar.tsx"
+      ]
+    },
+    "apps/web/src/components/layout/AppSidebar.tsx": {
+      "mtimeMs": 1775265014718.4863,
+      "size": 5729,
+      "imports": [
+        "react-router-dom",
+        "@hugeicons/react",
+        "@hugeicons/core-free-icons",
+        "@workspace/ui/components/sidebar",
+        "@workspace/ui/components/button",
+        "@/stores/useAuthStore"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/components/theme-provider.tsx": {
+      "mtimeMs": 1774939477382.5378,
+      "size": 5286,
+      "imports": [
+        "react"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/hooks/use-mobile.ts": {
+      "mtimeMs": 1774941599926.6985,
+      "size": 565,
+      "imports": [
+        "react"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/lib/firebase.ts": {
+      "mtimeMs": 1775161390885.7632,
+      "size": 1077,
+      "imports": [
+        "firebase/app",
+        "firebase/auth",
+        "firebase/firestore"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/main.tsx": {
+      "mtimeMs": 1774941909726.9297,
+      "size": 488,
+      "imports": [
+        "react",
+        "react-dom/client",
+        "./App.tsx",
+        "@/components/theme-provider.tsx",
+        "@workspace/ui/components/tooltip"
+      ],
+      "resolved": [
+        "apps/web/src/App.tsx"
+      ]
+    },
+    "apps/web/src/pages/CalendarPage.tsx": {
+      "mtimeMs": 1775167269025.774,
+      "size": 32004,
+      "imports": [
+        "react",
+        "@/services/googleApi",
+        "@/stores/useAuthStore",
+        "@workspace/ui/components/button",
+        "@workspace/ui/components/card",
+        "@workspace/ui/components/input",
+        "@fullcalendar/react",
+        "@fullcalendar/daygrid",
+        "@fullcalendar/timegrid",
+        "@fullcalendar/interaction",
+        "@fullcalendar/core"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/pages/ContactsPage.tsx": {
+      "mtimeMs": 1775158128734.2036,
+      "size": 7222,
+      "imports": [
+        "react",
+        "@/services/googleApi",
+        "@/stores/useAuthStore",
+        "@workspace/ui/components/button",
+        "@workspace/ui/components/card"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/pages/DashboardPage.tsx": {
+      "mtimeMs": 1774944043976.0217,
+      "size": 359,
+      "imports": [],
+      "resolved": []
+    },
+    "apps/web/src/pages/DrivePage.tsx": {
+      "mtimeMs": 1775167743194.4802,
+      "size": 19381,
+      "imports": [
+        "react",
+        "@/services/googleApi",
+        "@/stores/useAuthStore",
+        "@workspace/ui/components/button",
+        "@workspace/ui/components/card",
+        "@workspace/ui/components/input"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/pages/MaterialsPage.tsx": {
+      "mtimeMs": 1774944100525.7693,
+      "size": 363,
+      "imports": [],
+      "resolved": []
+    },
+    "apps/web/src/pages/SettingsPage.tsx": {
+      "mtimeMs": 1774944122180.0645,
+      "size": 360,
+      "imports": [],
+      "resolved": []
+    },
+    "apps/web/src/pages/StudentsPage.tsx": {
+      "mtimeMs": 1775265096488.987,
+      "size": 7668,
+      "imports": [
+        "react",
+        "@/stores/usePessoaStore",
+        "@/components/data-table/DataTable",
+        "@/components/data-table/pessoa-columns",
+        "@workspace/ui/components/button"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/schemas/pessoas.ts": {
+      "mtimeMs": 1775265235006.0237,
+      "size": 8411,
+      "imports": [
+        "zod"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/services/googleApi.ts": {
+      "mtimeMs": 1775158019314.2002,
+      "size": 7785,
+      "imports": [
+        "@/stores/useAuthStore"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/stores/useAuthStore.ts": {
+      "mtimeMs": 1775157990298.5947,
+      "size": 2956,
+      "imports": [
+        "zustand",
+        "firebase/auth",
+        "@/lib/firebase"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/stores/usePessoaStore.ts": {
+      "mtimeMs": 1775265342027.7034,
+      "size": 11148,
+      "imports": [
+        "zustand",
+        "firebase/firestore",
+        "@/lib/firebase",
+        "@/schemas/pessoas"
+      ],
+      "resolved": []
+    },
+    "apps/web/tsconfig.app.json": {
+      "mtimeMs": 1774942119143.535,
+      "size": 917,
+      "imports": [],
+      "resolved": []
+    },
+    "apps/web/tsconfig.json": {
+      "mtimeMs": 1774939477383.5364,
+      "size": 281,
+      "imports": [],
+      "resolved": []
+    },
+    "apps/web/tsconfig.node.json": {
+      "mtimeMs": 1774942129327.1968,
+      "size": 711,
+      "imports": [],
+      "resolved": []
+    },
+    "apps/web/vite.config.ts": {
+      "mtimeMs": 1774939477383.5364,
+      "size": 341,
+      "imports": [
+        "path",
+        "@tailwindcss/vite",
+        "@vitejs/plugin-react",
+        "vite"
+      ],
+      "resolved": []
+    },
+    "package.json": {
+      "mtimeMs": 1775155805822.7976,
+      "size": 503,
+      "imports": [],
+      "resolved": []
+    },
+    "packages/ui/components.json": {
+      "mtimeMs": 1774939540714.8113,
+      "size": 547,
+      "imports": [],
+      "resolved": []
+    },
+    "packages/ui/eslint.config.js": {
+      "mtimeMs": 1774939477384.5627,
+      "size": 639,
+      "imports": [
+        "@eslint/js",
+        "globals",
+        "eslint-plugin-react-hooks",
+        "eslint-plugin-react-refresh",
+        "typescript-eslint",
+        "eslint/config"
+      ],
+      "resolved": []
+    },
+    "packages/ui/package.json": {
+      "mtimeMs": 1774939581470.1987,
+      "size": 1299,
+      "imports": [],
+      "resolved": []
+    },
+    "packages/ui/src/components/.gitkeep": {
+      "mtimeMs": 1774939477387.0996,
+      "size": 0,
+      "imports": [],
+      "resolved": []
+    },
+    "packages/ui/src/components/button.tsx": {
+      "mtimeMs": 1774939575210.4885,
+      "size": 3233,
+      "imports": [
+        "react",
+        "class-variance-authority",
+        "radix-ui",
+        "@workspace/ui/lib/utils"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/card.tsx": {
+      "mtimeMs": 1774941598924.8174,
+      "size": 2556,
+      "imports": [
+        "react",
+        "@workspace/ui/lib/utils"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/dialog.tsx": {
+      "mtimeMs": 1774941600297.4036,
+      "size": 4282,
+      "imports": [
+        "react",
+        "radix-ui",
+        "@workspace/ui/lib/utils",
+        "@workspace/ui/components/button",
+        "@hugeicons/react",
+        "@hugeicons/core-free-icons"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/input.tsx": {
+      "mtimeMs": 1774941599764.5918,
+      "size": 944,
+      "imports": [
+        "react",
+        "@workspace/ui/lib/utils"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/separator.tsx": {
+      "mtimeMs": 1774941599447.6313,
+      "size": 656,
+      "imports": [
+        "react",
+        "radix-ui",
+        "@workspace/ui/lib/utils"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/sheet.tsx": {
+      "mtimeMs": 1774941600490.8916,
+      "size": 4685,
+      "imports": [
+        "react",
+        "radix-ui",
+        "@workspace/ui/lib/utils",
+        "@workspace/ui/components/button",
+        "@hugeicons/react",
+        "@hugeicons/core-free-icons"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/sidebar.tsx": {
+      "mtimeMs": 1774941600789.6902,
+      "size": 21544,
+      "imports": [
+        "react",
+        "class-variance-authority",
+        "radix-ui",
+        "@/hooks/use-mobile",
+        "@workspace/ui/lib/utils",
+        "@workspace/ui/components/button",
+        "@workspace/ui/components/input",
+        "@workspace/ui/components/separator",
+        "@workspace/ui/components/sheet",
+        "@workspace/ui/components/skeleton",
+        "@workspace/ui/components/tooltip",
+        "@hugeicons/react",
+        "@hugeicons/core-free-icons"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/skeleton.tsx": {
+      "mtimeMs": 1774941600077.2434,
+      "size": 287,
+      "imports": [
+        "@workspace/ui/lib/utils"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/table.tsx": {
+      "mtimeMs": 1774941599114.7715,
+      "size": 2370,
+      "imports": [
+        "react",
+        "@workspace/ui/lib/utils"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/tooltip.tsx": {
+      "mtimeMs": 1774941599604.1045,
+      "size": 2109,
+      "imports": [
+        "react",
+        "radix-ui",
+        "@workspace/ui/lib/utils"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/hooks/.gitkeep": {
+      "mtimeMs": 1774939477387.0996,
+      "size": 0,
+      "imports": [],
+      "resolved": []
+    },
+    "packages/ui/src/lib/.gitkeep": {
+      "mtimeMs": 1774939477387.0996,
+      "size": 0,
+      "imports": [],
+      "resolved": []
+    },
+    "packages/ui/src/lib/utils.ts": {
+      "mtimeMs": 1774939575250.5413,
+      "size": 166,
+      "imports": [
+        "clsx",
+        "tailwind-merge"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/styles/globals.css": {
+      "mtimeMs": 1774939581928.8877,
+      "size": 4712,
+      "imports": [
+        "tailwindcss",
+        "tw-animate-css",
+        "shadcn/tailwind.css",
+        "@fontsource-variable/inter"
+      ],
+      "resolved": []
+    },
+    "packages/ui/tsconfig.json": {
+      "mtimeMs": 1774939477387.0996,
+      "size": 405,
+      "imports": [],
+      "resolved": []
+    },
+    "packages/ui/tsconfig.lint.json": {
+      "mtimeMs": 1774939477387.0996,
+      "size": 335,
+      "imports": [],
+      "resolved": []
+    },
+    "resource_docs/dicas_gemini_firebase.md": {
+      "mtimeMs": 1774938560718.9927,
+      "size": 699816,
+      "imports": [],
+      "resolved": []
+    },
+    "resource_docs/estrutura_materiais_wizard.md": {
+      "mtimeMs": 1774795533066.0425,
+      "size": 25527,
+      "imports": [],
+      "resolved": []
+    },
+    "resource_docs/relato_estrutura_livros.md": {
+      "mtimeMs": 1774936004421.2837,
+      "size": 25282,
+      "imports": [],
+      "resolved": []
+    },
+    "scripts/project-graph.ts": {
+      "mtimeMs": 1775168984355.0186,
+      "size": 51838,
+      "imports": [
+        "node:fs",
+        "node:path",
+        "node:crypto",
+        "node:os",
+        "path",
+        "package"
+      ],
+      "resolved": []
+    },
+    "tsconfig.json": {
+      "mtimeMs": 1774939477387.0996,
+      "size": 168,
+      "imports": [],
+      "resolved": []
+    },
+    "turbo.json": {
+      "mtimeMs": 1774939477387.0996,
+      "size": 466,
+      "imports": [],
+      "resolved": []
+    }
+  }
+}
