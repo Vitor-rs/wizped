@@ -30,7 +30,7 @@ import { useAuthStore } from "@/stores/useAuthStore"
 // O campo "tooltip" é o texto que aparece ao passar o mouse quando recolhida.
 const mainNavItems = [
     { title: "Dashboard", path: "/", icon: DashboardSquare01Icon },
-    { title: "Alunos", path: "/alunos", icon: StudentIcon },
+    { title: "Pessoas", path: "/pessoas", icon: StudentIcon },
     { title: "Materiais", path: "/materiais", icon: BookOpen01Icon },
     { title: "Contatos", path: "/contatos", icon: ContactIcon },
     { title: "Agenda", path: "/agenda", icon: Calendar01Icon },

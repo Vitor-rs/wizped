@@ -31,7 +31,7 @@ export function App() {
       <Routes>
         <Route element={<AppLayout />}>
           <Route index element={<DashboardPage />} />
-          <Route path="alunos" element={<StudentsPage />} />
+          <Route path="pessoas" element={<StudentsPage />} />
           <Route path="materiais" element={<MaterialsPage />} />
           <Route path="contatos" element={<ContactsPage />} />
           <Route path="agenda" element={<CalendarPage />} />
