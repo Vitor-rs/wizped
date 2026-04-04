@@ -8,6 +8,7 @@ import { StudentsPage } from "@/pages/StudentsPage"
 import { MaterialsPage } from "@/pages/MaterialsPage"
 import { ContactsPage } from "@/pages/ContactsPage"
 import { SettingsPage } from "@/pages/SettingsPage"
+import { CadastrosPage } from "@/pages/CadastrosPage"
 import { CalendarPage } from "@/pages/CalendarPage"
 import { DrivePage } from "@/pages/DrivePage"
 
@@ -35,6 +36,7 @@ export function App() {
           <Route path="materiais" element={<MaterialsPage />} />
           <Route path="contatos" element={<ContactsPage />} />
           <Route path="agenda" element={<CalendarPage />} />
+          <Route path="gerenciar/cadastros" element={<CadastrosPage />} />
           <Route path="drive" element={<DrivePage />} />
           <Route path="configuracoes" element={<SettingsPage />} />
         </Route>

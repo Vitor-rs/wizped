@@ -2,11 +2,11 @@
   "meta": {
     "rootDir": "C:/Users/Vitor/Documents/Wizped/wizped",
     "rootLabel": "wizped",
-    "generatedAt": "2026-04-04T14:31:45.531Z",
-    "totalFiles": 64,
-    "totalDirs": 22,
+    "generatedAt": "2026-04-04T15:39:42.122Z",
+    "totalFiles": 75,
+    "totalDirs": 23,
     "totalEdges": 2,
-    "scanDurationMs": 16
+    "scanDurationMs": 11
   },
   "nodes": [
     {
@@ -57,6 +57,13 @@
       "parent": "apps/web/src/components",
       "label": "layout",
       "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\components\\layout"
+    },
+    {
+      "id": "apps/web/src/components/pessoa",
+      "type": "directory",
+      "parent": "apps/web/src/components",
+      "label": "pessoa",
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\components\\pessoa"
     },
     {
       "id": "apps/web/src/hooks",
@@ -268,7 +275,7 @@
       "parent": "apps/web/src",
       "label": "App.tsx",
       "ext": ".tsx",
-      "size": 1545,
+      "size": 1676,
       "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\App.tsx"
     },
     {
@@ -304,7 +311,7 @@
       "parent": "apps/web/src/components/data-table",
       "label": "pessoa-columns.tsx",
       "ext": ".tsx",
-      "size": 3673,
+      "size": 4106,
       "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\components\\data-table\\pessoa-columns.tsx"
     },
     {
@@ -322,8 +329,17 @@
       "parent": "apps/web/src/components/layout",
       "label": "AppSidebar.tsx",
       "ext": ".tsx",
-      "size": 5729,
+      "size": 8116,
       "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\components\\layout\\AppSidebar.tsx"
+    },
+    {
+      "id": "apps/web/src/components/pessoa/PessoaFormSheet.tsx",
+      "type": "file",
+      "parent": "apps/web/src/components/pessoa",
+      "label": "PessoaFormSheet.tsx",
+      "ext": ".tsx",
+      "size": 40889,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\components\\pessoa\\PessoaFormSheet.tsx"
     },
     {
       "id": "apps/web/src/components/theme-provider.tsx",
@@ -360,6 +376,15 @@
       "ext": ".tsx",
       "size": 488,
       "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\main.tsx"
+    },
+    {
+      "id": "apps/web/src/pages/CadastrosPage.tsx",
+      "type": "file",
+      "parent": "apps/web/src/pages",
+      "label": "CadastrosPage.tsx",
+      "ext": ".tsx",
+      "size": 6526,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\pages\\CadastrosPage.tsx"
     },
     {
       "id": "apps/web/src/pages/CalendarPage.tsx",
@@ -430,7 +455,7 @@
       "parent": "apps/web/src/schemas",
       "label": "pessoas.ts",
       "ext": ".ts",
-      "size": 8411,
+      "size": 19800,
       "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\apps\\web\\src\\schemas\\pessoas.ts"
     },
     {
@@ -542,6 +567,15 @@
       "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\.gitkeep"
     },
     {
+      "id": "packages/ui/src/components/badge.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "badge.tsx",
+      "ext": ".tsx",
+      "size": 1917,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\badge.tsx"
+    },
+    {
       "id": "packages/ui/src/components/button.tsx",
       "type": "file",
       "parent": "packages/ui/src/components",
@@ -560,6 +594,24 @@
       "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\card.tsx"
     },
     {
+      "id": "packages/ui/src/components/checkbox.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "checkbox.tsx",
+      "ext": ".tsx",
+      "size": 1506,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\checkbox.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/collapsible.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "collapsible.tsx",
+      "ext": ".tsx",
+      "size": 795,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\collapsible.tsx"
+    },
+    {
       "id": "packages/ui/src/components/dialog.tsx",
       "type": "file",
       "parent": "packages/ui/src/components",
@@ -576,6 +628,33 @@
       "ext": ".tsx",
       "size": 944,
       "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\input.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/radio-group.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "radio-group.tsx",
+      "ext": ".tsx",
+      "size": 1690,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\radio-group.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/scroll-area.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "scroll-area.tsx",
+      "ext": ".tsx",
+      "size": 1704,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\scroll-area.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/select.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "select.tsx",
+      "ext": ".tsx",
+      "size": 6866,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\select.tsx"
     },
     {
       "id": "packages/ui/src/components/separator.tsx",
@@ -614,6 +693,15 @@
       "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\skeleton.tsx"
     },
     {
+      "id": "packages/ui/src/components/switch.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "switch.tsx",
+      "ext": ".tsx",
+      "size": 1748,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\switch.tsx"
+    },
+    {
       "id": "packages/ui/src/components/table.tsx",
       "type": "file",
       "parent": "packages/ui/src/components",
@@ -621,6 +709,24 @@
       "ext": ".tsx",
       "size": 2370,
       "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\table.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/tabs.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "tabs.tsx",
+      "ext": ".tsx",
+      "size": 3511,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\tabs.tsx"
+    },
+    {
+      "id": "packages/ui/src/components/textarea.tsx",
+      "type": "file",
+      "parent": "packages/ui/src/components",
+      "label": "textarea.tsx",
+      "ext": ".tsx",
+      "size": 820,
+      "fullPath": "C:\\Users\\Vitor\\Documents\\Wizped\\wizped\\packages\\ui\\src\\components\\textarea.tsx"
     },
     {
       "id": "packages/ui/src/components/tooltip.tsx",

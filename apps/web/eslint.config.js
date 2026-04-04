@@ -5,7 +5,6 @@ import reactHooks from "eslint-plugin-react-hooks"
 import reactRefresh from "eslint-plugin-react-refresh"
 import tseslint from "typescript-eslint"
 import { defineConfig, globalIgnores } from "eslint/config"
-
 export default defineConfig([
   globalIgnores(["dist"]),
   {
@@ -19,10 +18,13 @@ export default defineConfig([
     languageOptions: {
       ecmaVersion: 2020,
       globals: globals.browser,
-      // Aqui está a correção: diz ao parser "sua raiz é ESTA pasta"
       parserOptions: {
         tsconfigRootDir: import.meta.dirname,
       },
+    },
+    // Adiciona aqui, no mesmo nível que languageOptions
+    rules: {
+      "react-hooks/incompatible-library": "off",
     },
   },
 ])

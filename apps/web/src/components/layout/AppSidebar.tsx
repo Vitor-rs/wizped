@@ -1,15 +1,22 @@
 // apps/web/src/components/layout/AppSidebar.tsx
 import { NavLink } from "react-router-dom"
 import { HugeiconsIcon } from "@hugeicons/react"
+// No import dos ícones, adiciona:
 import {
     DashboardSquare01Icon,
-    StudentIcon,
     BookOpen01Icon,
     Settings01Icon,
-    ContactIcon,
+    UserMultipleIcon,
+    GridIcon,
+    ContactBookIcon,
     Calendar01Icon,
-    Folder01Icon
+    HardDriveIcon,
 } from "@hugeicons/core-free-icons"
+import {
+    Collapsible,
+    CollapsibleContent,
+    CollapsibleTrigger,
+} from "@workspace/ui/components/collapsible"
 import {
     Sidebar,
     SidebarHeader,
@@ -21,90 +28,167 @@ import {
     SidebarMenu,
     SidebarMenuItem,
     SidebarMenuButton,
+    SidebarMenuSub,
+    SidebarMenuSubItem,
+    SidebarMenuSubButton,
     SidebarSeparator,
 } from "@workspace/ui/components/sidebar"
 import { Button } from "@workspace/ui/components/button"
 import { useAuthStore } from "@/stores/useAuthStore"
 
-// Cada item agora tem um ícone associado.
-// O campo "tooltip" é o texto que aparece ao passar o mouse quando recolhida.
-const mainNavItems = [
-    { title: "Dashboard", path: "/", icon: DashboardSquare01Icon },
-    { title: "Pessoas", path: "/pessoas", icon: StudentIcon },
-    { title: "Materiais", path: "/materiais", icon: BookOpen01Icon },
-    { title: "Contatos", path: "/contatos", icon: ContactIcon },
-    { title: "Agenda", path: "/agenda", icon: Calendar01Icon },
-    { title: "Drive", path: "/drive", icon: Folder01Icon }
+// ── Itens de navegação direta (sem sub-menu) ──
+const topItems = [
+    {
+        title: "Dashboard",
+        path: "/",
+        icon: DashboardSquare01Icon,
+        tooltip: "Dashboard",
+    },
+    {
+        title: "Pessoas",
+        path: "/pessoas",
+        icon: UserMultipleIcon,
+        tooltip: "Pessoas",
+    },
+    {
+        title: "Contatos",
+        path: "/contatos",
+        icon: ContactBookIcon,
+        tooltip: "Contatos Google",
+    },
+    {
+        title: "Agenda",
+        path: "/agenda",
+        icon: Calendar01Icon,
+        tooltip: "Agenda Google",
+    },
+    {
+        title: "Drive",
+        path: "/drive",
+        icon: HardDriveIcon,
+        tooltip: "Google Drive",
+    },
 ]
 
-const secondaryNavItems = [
-    { title: "Configurações", path: "/configuracoes", icon: Settings01Icon },
+// ── Sub-itens do grupo "Gerenciar" ──
+const gerenciarItems = [
+    {
+        title: "Cadastros",
+        path: "/gerenciar/cadastros",
+        tooltip: "Cadastros",
+    },
+    // Futuro: Contratos, Turmas, Atendimentos...
+]
+
+// ── Itens inferiores ──
+const bottomItems = [
+    {
+        title: "Materiais",
+        path: "/materiais",
+        icon: BookOpen01Icon,
+        tooltip: "Materiais",
+    },
+    {
+        title: "Configurações",
+        path: "/configuracoes",
+        icon: Settings01Icon,
+        tooltip: "Configurações",
+    },
+    
 ]
 
 export function AppSidebar() {
     const { user, logout } = useAuthStore()
 
     return (
-        // collapsible="icon" é a chave: a sidebar encolhe pra mostrar só ícones
-        <Sidebar collapsible="icon">
-            {/* ---- HEADER ---- */}
+        <Sidebar collapsible="icon" variant="sidebar">
+            {/* ── Header: logo ── */}
             <SidebarHeader>
-                <div className="flex items-center gap-2 px-2 py-1">
-                    {/* Quando recolhida, só o "W" aparece. Expandida, mostra "Wizped". 
-              O group-data-[collapsible=icon] é um seletor do Tailwind que o
-              shadcn Sidebar expõe: ele fica ativo quando a sidebar está no
-              modo ícone (recolhida). */}
-                    <span className="text-sm font-semibold">W</span>
-                    <span className="text-sm font-semibold group-data-[collapsible=icon]:hidden">
-                        izped
-                    </span>
-                </div>
+                <SidebarMenu>
+                    <SidebarMenuItem>
+                        <SidebarMenuButton size="lg" asChild>
+                            <NavLink to="/">
+                                <span className="text-sm font-semibold">W</span>
+                                <span className="ml-2 text-sm font-semibold">izped</span>
+                            </NavLink>
+                        </SidebarMenuButton>
+                    </SidebarMenuItem>
+                </SidebarMenu>
             </SidebarHeader>
 
-            {/* ---- CONTENT ---- */}
             <SidebarContent>
+                {/* ── Menu principal ── */}
                 <SidebarGroup>
-                    {/* O label do grupo some quando recolhida — comportamento padrão */}
                     <SidebarGroupLabel>Menu</SidebarGroupLabel>
                     <SidebarGroupContent>
                         <SidebarMenu>
-                            {mainNavItems.map((item) => (
+                            {topItems.map((item) => (
                                 <SidebarMenuItem key={item.path}>
-                                    {/* O prop "tooltip" faz o nome aparecer num tooltip
-                      ao passar o mouse quando a sidebar está recolhida */}
-                                    <SidebarMenuButton asChild tooltip={item.title}>
-                                        <NavLink
-                                            to={item.path}
-                                            className={({ isActive }) =>
-                                                isActive ? "font-semibold" : ""
-                                            }
-                                        >
-                                            <HugeiconsIcon icon={item.icon} />
+                                    <SidebarMenuButton tooltip={item.tooltip} asChild>
+                                        <NavLink to={item.path}>
+                                            <HugeiconsIcon icon={item.icon} size={18} />
                                             <span>{item.title}</span>
                                         </NavLink>
                                     </SidebarMenuButton>
                                 </SidebarMenuItem>
                             ))}
+
+                            {/* ── Gerenciar: grupo colapsável com sub-itens ── */}
+                            <Collapsible defaultOpen className="group/collapsible">
+                                <SidebarMenuItem>
+                                    <CollapsibleTrigger asChild>
+                                        <SidebarMenuButton tooltip="Gerenciar">
+                                            <HugeiconsIcon icon={GridIcon} size={18} />
+                                            <span>Gerenciar</span>
+                                            {/* Seta indicadora de aberto/fechado */}
+                                            <svg
+                                                xmlns="http://www.w3.org/2000/svg"
+                                                width="16"
+                                                height="16"
+                                                viewBox="0 0 24 24"
+                                                fill="none"
+                                                stroke="currentColor"
+                                                strokeWidth="2"
+                                                strokeLinecap="round"
+                                                strokeLinejoin="round"
+                                                className="ml-auto transition-transform group-data-[state=open]/collapsible:rotate-90"
+                                            >
+                                                <path d="m9 18 6-6-6-6" />
+                                            </svg>
+                                        </SidebarMenuButton>
+                                    </CollapsibleTrigger>
+
+                                    <CollapsibleContent>
+                                        <SidebarMenuSub>
+                                            {gerenciarItems.map((item) => (
+                                                <SidebarMenuSubItem key={item.path}>
+                                                    <SidebarMenuSubButton asChild>
+                                                        <NavLink to={item.path}>
+                                                            <span>{item.title}</span>
+                                                        </NavLink>
+                                                    </SidebarMenuSubButton>
+                                                </SidebarMenuSubItem>
+                                            ))}
+                                        </SidebarMenuSub>
+                                    </CollapsibleContent>
+                                </SidebarMenuItem>
+                            </Collapsible>
                         </SidebarMenu>
                     </SidebarGroupContent>
                 </SidebarGroup>
 
                 <SidebarSeparator />
 
+                {/* ── Seção inferior ── */}
                 <SidebarGroup>
                     <SidebarGroupLabel>Sistema</SidebarGroupLabel>
                     <SidebarGroupContent>
                         <SidebarMenu>
-                            {secondaryNavItems.map((item) => (
+                            {bottomItems.map((item) => (
                                 <SidebarMenuItem key={item.path}>
-                                    <SidebarMenuButton asChild tooltip={item.title}>
-                                        <NavLink
-                                            to={item.path}
-                                            className={({ isActive }) =>
-                                                isActive ? "font-semibold" : ""
-                                            }
-                                        >
-                                            <HugeiconsIcon icon={item.icon} />
+                                    <SidebarMenuButton tooltip={item.tooltip} asChild>
+                                        <NavLink to={item.path}>
+                                            <HugeiconsIcon icon={item.icon} size={18} />
                                             <span>{item.title}</span>
                                         </NavLink>
                                     </SidebarMenuButton>
@@ -115,16 +199,18 @@ export function AppSidebar() {
                 </SidebarGroup>
             </SidebarContent>
 
-            {/* ---- FOOTER ---- */}
+            {/* ── Footer: usuário logado + sair ── */}
             <SidebarFooter>
-                <div className="flex items-center justify-between gap-2 px-2">
-                    <span className="text-muted-foreground truncate text-xs group-data-[collapsible=icon]:hidden">
-                        {user?.displayName || user?.email}
-                    </span>
-                    <Button variant="ghost" size="xs" onClick={logout}>
-                        Sair
-                    </Button>
-                </div>
+                <SidebarMenu>
+                    <SidebarMenuItem>
+                        <div className="flex items-center gap-2 px-2 py-1">
+                            <span className="text-xs truncate">{user?.displayName ?? user?.email}</span>
+                            <Button variant="ghost" size="sm" onClick={logout} className="ml-auto h-6 text-xs">
+                                Sair
+                            </Button>
+                        </div>
+                    </SidebarMenuItem>
+                </SidebarMenu>
             </SidebarFooter>
         </Sidebar>
     )

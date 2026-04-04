@@ -76,8 +76,8 @@
       "resolved": []
     },
     "apps/web/src/App.tsx": {
-      "mtimeMs": 1775265033177.9053,
-      "size": 1545,
+      "mtimeMs": 1775315154593.003,
+      "size": 1676,
       "imports": [
         "react-router-dom",
         "@/stores/useAuthStore",
@@ -88,6 +88,7 @@
         "@/pages/MaterialsPage",
         "@/pages/ContactsPage",
         "@/pages/SettingsPage",
+        "@/pages/CadastrosPage",
         "@/pages/CalendarPage",
         "@/pages/DrivePage"
       ],
@@ -123,8 +124,8 @@
       "resolved": []
     },
     "apps/web/src/components/data-table/pessoa-columns.tsx": {
-      "mtimeMs": 1775264335162.8918,
-      "size": 3673,
+      "mtimeMs": 1775316132243.7627,
+      "size": 4106,
       "imports": [
         "@tanstack/react-table",
         "@/schemas/pessoas",
@@ -148,12 +149,13 @@
       ]
     },
     "apps/web/src/components/layout/AppSidebar.tsx": {
-      "mtimeMs": 1775265014718.4863,
-      "size": 5729,
+      "mtimeMs": 1775315559927.623,
+      "size": 8116,
       "imports": [
         "react-router-dom",
         "@hugeicons/react",
         "@hugeicons/core-free-icons",
+        "@workspace/ui/components/collapsible",
         "@workspace/ui/components/sidebar",
         "@workspace/ui/components/button",
         "@/stores/useAuthStore"
@@ -274,8 +276,8 @@
       "resolved": []
     },
     "apps/web/src/schemas/pessoas.ts": {
-      "mtimeMs": 1775265235006.0237,
-      "size": 8411,
+      "mtimeMs": 1775314563764.5652,
+      "size": 19800,
       "imports": [
         "zod"
       ],
@@ -573,6 +575,136 @@
       "mtimeMs": 1774939477387.0996,
       "size": 466,
       "imports": [],
+      "resolved": []
+    },
+    "apps/web/src/pages/CadastrosPage.tsx": {
+      "mtimeMs": 1775316393438.5027,
+      "size": 6526,
+      "imports": [
+        "react",
+        "@workspace/ui/components/tabs",
+        "@/stores/usePessoaStore",
+        "@/components/data-table/DataTable",
+        "@/components/data-table/pessoa-columns",
+        "@workspace/ui/components/button",
+        "@/schemas/pessoas",
+        "@/components/pessoa/PessoaFormSheet"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/badge.tsx": {
+      "mtimeMs": 1775315006813.9714,
+      "size": 1917,
+      "imports": [
+        "react",
+        "class-variance-authority",
+        "radix-ui",
+        "@workspace/ui/lib/utils"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/checkbox.tsx": {
+      "mtimeMs": 1775315947675.1582,
+      "size": 1506,
+      "imports": [
+        "react",
+        "radix-ui",
+        "@workspace/ui/lib/utils",
+        "@hugeicons/react",
+        "@hugeicons/core-free-icons"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/collapsible.tsx": {
+      "mtimeMs": 1775315006973.9897,
+      "size": 795,
+      "imports": [
+        "radix-ui"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/radio-group.tsx": {
+      "mtimeMs": 1775315947844.4087,
+      "size": 1690,
+      "imports": [
+        "react",
+        "radix-ui",
+        "@workspace/ui/lib/utils"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/scroll-area.tsx": {
+      "mtimeMs": 1775315948158.963,
+      "size": 1704,
+      "imports": [
+        "react",
+        "radix-ui",
+        "@workspace/ui/lib/utils"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/select.tsx": {
+      "mtimeMs": 1775315947489.6887,
+      "size": 6866,
+      "imports": [
+        "react",
+        "radix-ui",
+        "@workspace/ui/lib/utils",
+        "@hugeicons/react",
+        "@hugeicons/core-free-icons"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/switch.tsx": {
+      "mtimeMs": 1775315948318.476,
+      "size": 1748,
+      "imports": [
+        "react",
+        "radix-ui",
+        "@workspace/ui/lib/utils"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/tabs.tsx": {
+      "mtimeMs": 1775315006627.5876,
+      "size": 3511,
+      "imports": [
+        "react",
+        "class-variance-authority",
+        "radix-ui",
+        "@workspace/ui/lib/utils"
+      ],
+      "resolved": []
+    },
+    "packages/ui/src/components/textarea.tsx": {
+      "mtimeMs": 1775315947991.3635,
+      "size": 820,
+      "imports": [
+        "react",
+        "@workspace/ui/lib/utils"
+      ],
+      "resolved": []
+    },
+    "apps/web/src/components/pessoa/PessoaFormSheet.tsx": {
+      "mtimeMs": 1775316034561.9766,
+      "size": 40889,
+      "imports": [
+        "react",
+        "react-hook-form",
+        "@hookform/resolvers/zod",
+        "zod",
+        "@workspace/ui/components/sheet",
+        "@workspace/ui/components/form",
+        "@workspace/ui/components/select",
+        "@workspace/ui/components/tabs",
+        "@workspace/ui/components/input",
+        "@workspace/ui/components/textarea",
+        "@workspace/ui/components/checkbox",
+        "@workspace/ui/components/button",
+        "@workspace/ui/components/scroll-area",
+        "@/stores/usePessoaStore",
+        "@/schemas/pessoas"
+      ],
       "resolved": []
     }
   }
